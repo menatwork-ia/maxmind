@@ -1,7 +1,7 @@
 {
-	"name":"menatwork/cleanup",
-	"description":"A general cronjob to cleanup folders and files",
-	"keywords":["cleanup","files","cronjob"],
+	"name":"menatwork/maxmind",
+	"description":"MaxMind GeoIP cronjob and integration for Contao",
+	"keywords":["geoip","maxmind","cronjob"],
 	"type":"contao-module",
 	"homepage":"http://www.men-at-work.de",
 	"license":"LGPL-3.0+",
@@ -21,14 +21,18 @@
 	],
 	"support":{
 		"email":"contao@men-at-work.de",
-		"issues":"https://github.com/menatwork-ia/cleanup/issues",
+		"issues":"https://github.com/menatwork-ia/maxmind/issues",
 		"irc":"irc://irc.freenode.org/contao.dev",
-		"source":"https://github.com/menatwork-ia/cleanup"
+		"source":"https://github.com/menatwork-ia/maxmind"
 	},
 	"require":{
 		"php":">=5.3",
 		"contao/core":">=3.2,<4",
-		"contao-community-alliance/composer-installer":"*"
+		"contao-community-alliance/composer-installer":"*",
+		"menatwork/geolocation":"1.*"
+	},
+	"suggest": {
+		"terminal42/notification_center": "Provide a central and flexible way for Contao developers to send notifications via their extensions."
 	},
 	"autoload":{
 		"classmap":["system/"]
@@ -36,7 +40,8 @@
 	"extra":{
 		"contao":{
 			"sources":{
-				"system/modules/cleanup":"system/modules/cleanup"
+				"system/modules/maxmind":"system/modules/maxmind",
+				"system/modules/notification_center_maxmind":"system/modules/notification_center_maxmind"
 			}
 		}
 	}
