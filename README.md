@@ -13,6 +13,14 @@ cd /var/www/contao/system/modules/maxmind
 php MaxMindCaller.php
 ```
 
+***Parameter***
+
+--verbose  // Print log msg on screen
+--dry-run  // Don't import into database, just download it.
+--no-mail  // Send no mail notification
+--force  // Always import into database. Don't work with dry run.
+--language "de"  // Contains the language for the backend.
+
 
 ### HTTP Aufruf / HTTP Request
 
