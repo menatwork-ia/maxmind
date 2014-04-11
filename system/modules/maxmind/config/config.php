@@ -12,37 +12,33 @@
 /**
  * Notification center configuration
  */
-$GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind'] = array
+$GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind']['maxmind_import'] = array
 (
-    // Export for members
-    'maxmind_import' => array
+    'email_subject' => array
     (
-        'email_subject' => array
-        (
-            'new_rows',
-            'domain',
-            'websiteTitle',
-            'error',
-            'state',
-            'work'
-        ),
-        'email_text' => array
-        (
-            'new_rows',
-            'domain',
-            'websiteTitle',
-            'error',
-            'state',
-            'work'
-        ),
-        'email_html' => array
-        (
-            'new_rows',
-            'domain',
-            'websiteTitle',
-            'error',
-            'state',
-            'work'
-        )
+        'new_rows',
+        'domain',
+        'websiteTitle',
+        'error',
+        'state',
+        'work'
+    ),
+    'email_text'    => array
+    (
+        'new_rows',
+        'domain',
+        'websiteTitle',
+        'error',
+        'state',
+        'work'
+    ),
+    'email_html'    => array
+    (
+        'new_rows',
+        'domain',
+        'websiteTitle',
+        'error',
+        'state',
+        'work'
     )
 );
