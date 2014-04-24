@@ -42,3 +42,13 @@ $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind']['maxmind_import'
         'work'
     )
 );
+
+$GLOBALS['SYC_CONFIG']['folder_blacklist'] = array_merge( (array) $GLOBALS['SYC_CONFIG']['folder_blacklist'], array
+(
+    'system/modules/maxmind/assets/',
+));
+
+$GLOBALS['SYC_CONFIG']['local_blacklist'] = array_merge( (array) $GLOBALS['SYC_CONFIG']['local_blacklist'], array
+(
+    'maxmind_lastUpdate'
+));
