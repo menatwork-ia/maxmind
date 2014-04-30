@@ -41,6 +41,12 @@
 		"contao":{
 			"sources":{
 				"system/modules/maxmind":"system/modules/maxmind"
+			},
+			"transifex": {
+				"project": "maxmind",
+				"prefix": "",
+				"languages_cto": "system/modules/maxmind/languages",
+				"languages_tx": ".tx"
 			}
 		}
 	}
