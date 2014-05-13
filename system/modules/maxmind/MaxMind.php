@@ -239,7 +239,7 @@ class MaxMind extends \System
         }
 
         // Check the name of the last file
-        if ($GLOBALS['TL_CONFIG']['maxmind_lastUpdate'] == $this->strRealCSVName)
+        if ($GLOBALS['TL_CONFIG']['maxmind_lastUpdate'] == $this->strRealNameOfCsv)
         {
             return true;
         }
