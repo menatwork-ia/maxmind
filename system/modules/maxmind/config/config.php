@@ -21,7 +21,8 @@ $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind']['maxmind_import'
         'websiteTitle',
         'error',
         'state',
-        'work'
+        'work',
+        'servername'
     ),
     'email_text'    => array
     (
@@ -30,7 +31,8 @@ $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind']['maxmind_import'
         'websiteTitle',
         'error',
         'state',
-        'work'
+        'work',
+        'servername'
     ),
     'email_html'    => array
     (
@@ -39,7 +41,8 @@ $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['maxmind']['maxmind_import'
         'websiteTitle',
         'error',
         'state',
-        'work'
+        'work',
+        'servername'
     )
 );
 
@@ -50,5 +53,6 @@ $GLOBALS['SYC_CONFIG']['folder_blacklist'] = array_merge( (array) $GLOBALS['SYC_
 
 $GLOBALS['SYC_CONFIG']['local_blacklist'] = array_merge( (array) $GLOBALS['SYC_CONFIG']['local_blacklist'], array
 (
-    'maxmind_lastUpdate'
+    'maxmind_lastUpdate',
+    'maxmind_serverName'
 ));

@@ -23,3 +23,4 @@ $GLOBALS['TL_LANG']['tl_settings']['maxmind_has_license']    = array('MaxMind li
 $GLOBALS['TL_LANG']['tl_settings']['maxmind_license']        = array('License key', 'Please enter the MaxMind license key.');
 $GLOBALS['TL_LANG']['tl_settings']['maxmind_lastUpdate']     = array('Last updated', 'This field is automatically filled by the Importer and shows the file of the last successful import.');
 $GLOBALS['TL_LANG']['tl_settings']['maxmind_nc']             = array('Email notification', 'Here you can select the setting for sending import notifications (optional).');
+$GLOBALS['TL_LANG']['tl_settings']['maxmind_serverName']     = array('Server name', 'Here you can add a Name for the server or site. This name can be used in the email (optional).');

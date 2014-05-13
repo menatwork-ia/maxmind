@@ -21,7 +21,7 @@ class MaxMindTable
         // If the notification center is not in the active list remove it from the palettes.
         if (!self::isNotificationCenterActive())
         {
-            $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = str_replace(',maxmind_nc', '', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
+            $GLOBALS['TL_DCA']['tl_settings']['palettes']['default'] = str_replace(array(',maxmind_nc', ',maxmind_serverName'), '', $GLOBALS['TL_DCA']['tl_settings']['palettes']['default']);
         }
     }
 

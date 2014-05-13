@@ -544,7 +544,8 @@ class MaxMind extends \System
             'domain'       => \Environment::get('base'),
             'error'        => $GLOBALS['TL_LANG']['maxmind']['none'],
             'state'        => $GLOBALS['TL_LANG']['maxmind']['none'],
-            'work'         => $GLOBALS['TL_LANG']['maxmind']['none']
+            'work'         => $GLOBALS['TL_LANG']['maxmind']['none'],
+            'servername'   => $GLOBALS['TL_CONFIG']['maxmind_serverName']
         );
 
         // Success, new data
@@ -577,5 +578,3 @@ class MaxMind extends \System
 
 
 }
-
-?>
