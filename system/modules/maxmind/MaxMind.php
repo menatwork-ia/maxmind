@@ -517,6 +517,8 @@ class MaxMind extends \System
         {
             \Config::getInstance()->update("\$GLOBALS['TL_CONFIG']['maxmind_lastUpdate']", $this->strRealNameOfCsv);
         }
+
+        \Config::getInstance()->save();
     }
 
     /**
